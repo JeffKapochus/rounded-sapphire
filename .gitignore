@@ -20,4 +20,16 @@
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
+config/initializers/secret_token.rb
 /config/master.key
+
+#Ignore node_modules
+node_modules/
+
+#Keep database keys hidden
+/config/database.yml
+
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
