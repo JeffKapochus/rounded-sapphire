@@ -4,15 +4,19 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SubmissionComponent } from './submission/submission.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SubmissionComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
