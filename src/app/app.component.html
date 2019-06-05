@@ -18,6 +18,6 @@
   </li>
 </ul>
 <ul>
-  <li *ngFor="let movie of movies">{{ movie.title }} wow {{movie.rating}}</li>
+  <li *ngFor="let submission of submissions"><a href="localhost:3000/submissions/{{ submission.id }}">{{ submission.description }}</a></li>
 </ul>
 

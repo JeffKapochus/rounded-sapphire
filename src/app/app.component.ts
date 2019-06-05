@@ -8,10 +8,10 @@ import { Http } from '@angular/http';
 })
 export class AppComponent {
   title = 'rounded-sapphire';
-  movies;
+  submissions;
 
   constructor(private http: Http){
-    http.get('http://localhost:3000/movies.json')
-    .subscribe(rest => this.movies = rest.json());
+    http.get('http://localhost:3000/submissions')
+    .subscribe(rest => this.submissions = rest.json());
   }
 }
