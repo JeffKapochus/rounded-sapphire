@@ -1,0 +1,23 @@
+.previewLink{
+    text-decoration: none;
+}
+.previewContainerDiv{
+    background-color: #E6E5E9;
+    color: #16171F;
+    width:20vw;
+    max-height:330px;
+    min-width: 300px;
+    border-radius:7px;
+    padding:1em;
+}
+.previewTitleDiv{
+    color: #0F52BA;
+    font-size:1.4vw;
+    font-weight: bold;
+}
+.previewDescriptionDiv{
+    font-size: 0.9vw;
+}
+.previewInfoDiv{
+    font-size:0.6vw;
+}

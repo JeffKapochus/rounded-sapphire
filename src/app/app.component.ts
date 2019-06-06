@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import { SubmissionPreviewComponent } from './submission-preview/submission-preview.component';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
