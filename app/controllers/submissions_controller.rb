@@ -5,12 +5,12 @@ class SubmissionsController < ApplicationController
   def index
     @submissions = Submission.all
 
-    render json: @submissions
+    render json: @submissions, :include => :user
   end
 
   # GET /submissions/1
   def show
-    render json: @submission
+    render json: @submission, :include => :user
   end
 
   # POST /submissions

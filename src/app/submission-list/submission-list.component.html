@@ -1,0 +1,3 @@
+<ul id="previewList">
+  <li *ngFor="let submission of submissions"><app-submission-preview title="{{ submission.title }}" description="{{ submission.description }}" submitter="{{ submission.user.name }}" id="{{ submission.id }}" submitTime="{{ submission.created_at }}"></app-submission-preview></li>
+</ul>

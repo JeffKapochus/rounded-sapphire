@@ -7,7 +7,7 @@
       {{description}}
     </div>
     <div class="previewInfoDiv">
-      Submitted by {{ submitter }} at {{ submitTime }}
+      Submitted by {{ submitter }} on {{ submitTime | date: 'MMM dd, yyyy'}} at {{ submitTime | date: 'hh:mm:ss a'}}
     </div>
   </div>
 </a>

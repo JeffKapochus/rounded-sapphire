@@ -11,15 +11,6 @@ export class SubmissionPreviewComponent {
   @Input() description :string;
   @Input() submitter :string; 
   @Input() id :number;
-  private _submitTime = '';
-
-  @Input() set submitTime(submitTime :string){
-    var year = submitTime.substring(0,4);
-    var month = submitTime.substring(5,7);
-    var day = submitTime.substring(8,10); 
-    this._submitTime = day + "-" + month + "-" + year;
-  }
-
-  get submitTime() :string { return this._submitTime; }
+  @Input() submitTime :Date;
 
 }

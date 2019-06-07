@@ -24,6 +24,6 @@ export class SubmissionComponent implements OnInit {
 
   getSubmission(){
     this.httpService.get('http://localhost:3000/submissions/' + this.submission_id)
-    .subscribe(rest => this.submission = rest.json())
+    .subscribe(rest => this.submission = rest.json());
   }
 }

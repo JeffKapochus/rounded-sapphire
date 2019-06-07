@@ -5,19 +5,58 @@
     background-color: #E6E5E9;
     color: #16171F;
     width:20vw;
+    height:20vw;
     max-height:330px;
-    min-width: 300px;
+    min-height:200px;
+    min-width: 296px;
+    max-width:416px;
     border-radius:7px;
     padding:1em;
 }
 .previewTitleDiv{
     color: #0F52BA;
-    font-size:1.4vw;
+    font-size:1.3vw;
     font-weight: bold;
+    height:48%;
 }
 .previewDescriptionDiv{
     font-size: 0.9vw;
+    height:48%;
 }
 .previewInfoDiv{
     font-size:0.6vw;
+    height: 4%;
 }
+@media only screen and (max-width: 1000px) {
+    .previewTitleDiv{
+        font-size:1.7vw;
+    }
+    .previewDescriptionDiv{
+        font-size: 1.2vw;
+    }
+    .previewInfoDiv{
+        font-size:1.1vw;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .previewTitleDiv{
+        font-size:2.4vw;
+    }
+    .previewDescriptionDiv{
+        font-size: 1.8vw;
+    }
+    .previewInfoDiv{
+        font-size:1.4vw;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .previewTitleDiv {
+        font-size:25px;
+    }
+    .previewDescriptionDiv{
+        font-size: 17.2px;
+    }
+    .previewInfoDiv{
+        font-size: 11.3px;
+    }
+  }
