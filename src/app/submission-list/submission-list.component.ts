@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 
-import { SubmissionPreviewComponent } from './submission-preview/submission-preview.component';
+import { SubmissionPreviewComponent } from '../submission-preview/submission-preview.component';
 
 @Component({
   selector: 'app-submission-list',
