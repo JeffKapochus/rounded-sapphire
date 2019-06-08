@@ -1,0 +1,6 @@
+<div id="user-info-pane">
+  <h2 *ngIf="user">Submissions by {{ user.name }}</h2>
+</div>
+<div *ngIf="user">
+  <app-submission-list user_id="{{user_id}}"></app-submission-list>
+</div>

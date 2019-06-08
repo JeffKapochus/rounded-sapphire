@@ -10,7 +10,7 @@ class SubmissionsController < ApplicationController
 
   #GET /submissions/user/1
   def get_user_submissions
-    render json: Submission.where("user_id = ?", params[:id])
+    render json: Submission.where("user_id = ?", params[:id]), :include => :user
   end
 
   # GET /submissions/1

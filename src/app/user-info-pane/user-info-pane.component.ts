@@ -3,13 +3,14 @@ import { ActivatedRoute } from "@angular/router";
 import { Http } from '@angular/http';
 
 @Component({
-  selector: 'app-user',
+  selector: 'app-user-info-pane',
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-export class UserComponent implements OnInit {
+export class UserInfoPaneComponent implements OnInit {
   title = "User";
   httpService;
+  user;
   user_id;
   submissions;
 

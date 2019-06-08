@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Http } from '@angular/http';
 
 import { SubmissionPreviewComponent } from '../submission-preview/submission-preview.component';
@@ -11,13 +11,22 @@ import { SubmissionPreviewComponent } from '../submission-preview/submission-pre
 export class SubmissionListComponent implements OnInit {
 
   submissions;
+  httpService;
+  @Input() user_id? :number;
 
   constructor(private http: Http){
-    http.get('http://localhost:3000/submissions')
-    .subscribe(rest => this.submissions = rest.json());
+    this.httpService = http;
   }
 
   ngOnInit() {
+    if(this.user_id == undefined){
+      this.httpService.get('http://localhost:3000/submissions')
+      .subscribe(rest => this.submissions = rest.json());
+    }
+    else{
+      this.httpService.get('http://localhost:3000/submissions/user/' + this.user_id)
+    .subscribe(rest => this.submissions = rest.json());
+    }
   }
 
 }
