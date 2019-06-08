@@ -8,6 +8,11 @@ class SubmissionsController < ApplicationController
     render json: @submissions, :include => :user
   end
 
+  #GET /submissions/user/1
+  def get_user_submissions
+    render json: Submission.where("user_id = ?", params[:id])
+  end
+
   # GET /submissions/1
   def show
     render json: @submission, :include => :user

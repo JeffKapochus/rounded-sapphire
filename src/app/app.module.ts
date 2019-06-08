@@ -8,13 +8,15 @@ import { SubmissionComponent } from './submission/submission.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SubmissionPreviewComponent } from './submission-preview/submission-preview.component';
 import { SubmissionListComponent } from './submission-list/submission-list.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SubmissionComponent,
     SubmissionPreviewComponent,
-    SubmissionListComponent
+    SubmissionListComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,

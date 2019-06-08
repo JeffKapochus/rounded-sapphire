@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Http } from '@angular/http';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import { SubmissionPreviewComponent } from './submission-preview/submission-preview.component';
@@ -15,9 +14,7 @@ export class AppComponent {
   submissions;
   faBars = faBars;
 
-  constructor(private http: Http){
-    http.get('http://localhost:3000/submissions')
-    .subscribe(rest => this.submissions = rest.json());
+  constructor(){
   }
 
   onClickMe(){
